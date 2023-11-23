@@ -11,6 +11,16 @@
   </head>
 
   <body>
+    <div class="header">
+      <nav class="navbar">
+        <div class="navbar-container">
+          <%= link_to 'Blog Posts', root_path, class: "navbar-item" %>
+        </div>
+        <div class="navbar-container">
+          <%= link_to 'Users', users_path, class: "navbar-item" %>
+        </div>
+      </nav>
+    </div>
     <%= yield %>
   </body>
 </html>

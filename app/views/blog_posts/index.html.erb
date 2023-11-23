@@ -4,10 +4,12 @@
 
 <div id="blog_posts">
   <% @blog_posts.each do |blog_post| %>
-    <%= render blog_post %>
-    <p>
-      <%= link_to "Show this blog post", blog_post %>
-    </p>
+    <div class="container">
+      <%= render blog_post %>
+      <p>
+        <%= link_to "Show this blog post", blog_post %>
+      </p>
+    </div>
   <% end %>
 </div>
 
